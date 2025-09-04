@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Star Systems</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./circumvent.js"></script>
+    <script src="./script.js" defer></script>
+    
+  </head>
+  <body>
+    <div id="canva"></div>
+    
+    <div id="info">
+      <p id="starNum"></p>
+      <label>Mass: </label><input type="number" value="10" min="1" id="mass"><br>
+      <label>Show Paths: </label><input type="checkbox" id="showPaths"><br>
+      <label>Border: </label><input type="checkbox" id="border"><br>
+      <label>Collisions: </label><input type="checkbox" id="collisions"><br>
+      <label>Anti-Gravity: </label><input type="checkbox" id="antiG"><br>
+      <label>Play Speed: </label>
+      <select id="playSpeed">
+        <option value="0.1">0.1</option>
+        <option value="0.5">0.5</option>
+        <option value="1" selected>1</option>
+        <option value="2">2</option>
+        <option value="10">10</option>
+      </select>
+      <button onclick="createOrbit()">Create Orbit</button>
+      <button onclick="createBinary()">Create Binary Orbit</button>
+    </div>
+  </body>
+</html>

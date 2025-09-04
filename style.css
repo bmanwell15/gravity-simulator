@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+select, input {
+ outline: none; 
+}
+
+.star {
+  position: fixed;
+  border-radius: 50%;
+  background-color: white;
+  width: 10px;
+  height: 10px;
+}
+
+
+/* .star {
+  position: fixed;
+  background-color: white;
+  width: 10px;
+  height: 20px;
+  border-top: 2px solid red;
+} */
+
+.dot {
+  position: fixed;
+  border-radius: 50%;
+  background-color: red;
+  width: 2px;
+  height: 2px;
+  z-index: -1;
+}
+
+#info {
+  position: fixed;
+  left: 0;bottom:0;
+  width: 200px;
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid gray;
+  border-top-right-radius: 20px;
+  padding: 5px;
+  z-index: 5;
+  font-family: Roboto;
+}
+
+#mass {
+  width: 40px;
+  border-radius: 5px;
+}
+
+#canva {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left:0;top:0;
+}
